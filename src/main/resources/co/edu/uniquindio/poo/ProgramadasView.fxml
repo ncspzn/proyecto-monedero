@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="co.edu.uniquindio.poo.viewController.ProgramadasViewController">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <HBox spacing="10.0">
+      <ComboBox fx:id="cmbTipo" />
+      <ComboBox fx:id="cmbOrigen" prefWidth="230.0" />
+      <Label text="→" />
+      <ComboBox fx:id="cmbDestino" prefWidth="200.0" />
+   </HBox>
+   <HBox alignment="CENTER_LEFT" spacing="10.0">
+      <TextField fx:id="txtMonto" promptText="Monto" />
+      <ComboBox fx:id="cmbFrecuencia" />
+      <Label text="Primera fecha:" />
+      <DatePicker fx:id="dpFecha" />
+      <Button onAction="#programar" text="Programar" />
+   </HBox>
+   <TableView fx:id="tblProgramadas" VBox.vgrow="ALWAYS" />
+   <HBox alignment="CENTER_LEFT" spacing="10.0">
+      <Label text="Fecha simulada:" />
+      <DatePicker fx:id="dpFechaSimulada" />
+      <Button onAction="#procesar" text="Procesar vencidas hasta la fecha" />
+   </HBox>
+   <TextArea fx:id="txtLog" editable="false" prefRowCount="5" />
+</VBox>

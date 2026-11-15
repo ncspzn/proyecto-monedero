@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="680.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="co.edu.uniquindio.poo.viewController.MainViewController">
+   <top>
+      <HBox alignment="CENTER_LEFT" spacing="10.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <Label text="Cliente:" />
+         <ComboBox fx:id="cmbCliente" prefWidth="260.0" />
+         <Button onAction="#nuevoCliente" text="Nuevo cliente" />
+      </HBox>
+   </top>
+   <center>
+      <TabPane tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Monederos">
+               <content><fx:include source="MonederosView.fxml" /></content>
+            </Tab>
+            <Tab text="Operaciones">
+               <content><fx:include source="OperacionesView.fxml" /></content>
+            </Tab>
+            <Tab text="Historial">
+               <content><fx:include source="HistorialView.fxml" /></content>
+            </Tab>
+            <Tab text="Puntos y rangos">
+               <content><fx:include source="PuntosView.fxml" /></content>
+            </Tab>
+            <Tab text="Programadas">
+               <content><fx:include source="ProgramadasView.fxml" /></content>
+            </Tab>
+            <Tab text="Reportes">
+               <content><fx:include source="ReportesView.fxml" /></content>
+            </Tab>
+            <Tab text="Notificaciones">
+               <content><fx:include source="NotificacionesView.fxml" /></content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </center>
+</BorderPane>
