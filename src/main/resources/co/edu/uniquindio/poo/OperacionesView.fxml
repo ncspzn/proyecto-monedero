@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane hgap="10.0" vgap="10.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+<GridPane hgap="10.0" stylesheets="@estilos.css" vgap="10.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
           fx:controller="co.edu.uniquindio.poo.viewController.OperacionesViewController">
    <padding>
       <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
